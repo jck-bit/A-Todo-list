@@ -14,14 +14,15 @@ code {
 .App{
   background:rgb(103, 128, 53);
   margin: 20px auto;
-  width: 90%;
-  width: 700px;
+  border-radius: 10px;
+  width: 500px;
   color: #eee;
   border-radius: 5px;
-  height: 10rem;
+  height: 300px;
 }
 
 .nien{
   text-align: center;
   margin-bottom: 20px;
+  border-radius: 5px;
 }

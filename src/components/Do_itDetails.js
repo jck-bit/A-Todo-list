@@ -3,12 +3,16 @@ import { Do_itContext } from "../context/Do_itContext";
 
 
 const Do_itDetails = ({todo}) => {
-    const { removeBook } = useContext(Do_itContext)
+    const { removeTask } = useContext(Do_itContext)
     return (
         <div>
             <li>
-                <div className="today">{todo.oday}</div>
+                <div className="today">{todo.today}</div>
                 <div className="Task">{todo.Task}</div>
+            
+            <button  className="btn" onClick ={() =>{
+                return removeTask(todo.id)
+            }}>Remove Task</button>
             </li>
         </div>
     )

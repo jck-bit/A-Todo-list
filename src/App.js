@@ -3,17 +3,15 @@ import Navbar from './components/Navbar'
 import Todlist from "./components/Todlist";
 
 
-
-
-
 function App() {
   return (
+
     <div className="App">
       <Do_itContextProvider>
-       <Navbar/>
-       <Todlist/>
+        <Navbar/>
+        <Todlist/>
       </Do_itContextProvider>
-      </div>
+    </div>
   );
 }
 

@@ -18,7 +18,7 @@ const Todlist = () => {
             
         </div>
       ) : (
-         <div classname="empty"> No Task</div>
+         <div classname="empty"></div>
     )
 }
 

@@ -14,10 +14,10 @@ const Do_itContextProvider = (props) => {
         setTodo(...todos, { Today, Task, id: uuidv4() });
     }
 
-    const removeTask =() =>{
+    function removeTask(id) {
         setTodo(todos.filter(todo => {
-            return todo.id !== todo;
-        }))
+            return todo.id !== id;
+        }));
     }
     return (
         <Do_itContext.Provider value ={{todos,addTask, removeTask}}>
