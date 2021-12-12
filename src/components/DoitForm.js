@@ -11,10 +11,8 @@ const DoitForm = () => {
             e.preventDefault();
             addTask(day, task);
             setDay('')
-            setTask('')
-        
+            setTask('')   
     }
-
     return (
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder=" Day" value={day}

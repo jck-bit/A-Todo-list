@@ -10,8 +10,8 @@ const DoitContextProvider = (props) => {
         {today:'go to the market', Task:'Buy bananas', id: 2}
     ])
 
-    function addTask(Today, Task) {
-        setTodo([...todos, { Today, Task, id: uuidv4() }]);
+    function addTask(today, Task) {
+        setTodo([...todos, { today, Task, id: uuidv4() }]);
     }
 
     function removeTask(id) {
@@ -26,4 +26,4 @@ const DoitContextProvider = (props) => {
     );
 }
  
-export default DoitContextProvider  ;
+export default DoitContextProvider;
