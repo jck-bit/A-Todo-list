@@ -1,8 +1,8 @@
 import React,{useContext, useState} from 'react'
-import { Do_itContext } from '../context/Do_itContext'
+import { DoitContext } from '../context/DoitContext'
 
 const DoitForm = () => {
-    const {addTask} = useContext(Do_itContext)
+    const {addTask} = useContext(DoitContext)
 
     const [day, setDay] = useState('')
     const [task, setTask] = useState('')

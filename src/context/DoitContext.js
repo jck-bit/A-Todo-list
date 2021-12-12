@@ -2,9 +2,9 @@ import React,{createContext, useState} from "react";
 import { v4 as uuidv4} from 'uuid'
 
 
-export const Do_itContext = createContext();
+export const DoitContext = createContext();
 
-const Do_itContextProvider = (props) => {
+const DoitContextProvider = (props) => {
     const [todos, setTodo] = useState([
         {today:'go to the market', Task:'Buy bananas', id:1},
         {today:'go to the market', Task:'Buy bananas', id: 2}
@@ -20,10 +20,10 @@ const Do_itContextProvider = (props) => {
         }));
     }
     return (
-        <Do_itContext.Provider value ={{todos,addTask, removeTask}}>
+        <DoitContext.Provider value ={{todos,addTask, removeTask}}>
             {props.children}
-        </Do_itContext.Provider>
+        </DoitContext.Provider>
     );
 }
  
-export default Do_itContextProvider;
+export default DoitContextProvider  ;

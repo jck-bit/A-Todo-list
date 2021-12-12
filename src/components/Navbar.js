@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import {Do_itContext} from '../context/Do_itContext';
+import {DoitContext} from '../context/DoitContext';
 
 
 export const Navbar = () => {
-    const {todos} = useContext(Do_itContext);
+    const {todos} = useContext(DoitContext);
     return (
         <div className="nien"> 
             <h1>Nie&ns Todo list</h1>

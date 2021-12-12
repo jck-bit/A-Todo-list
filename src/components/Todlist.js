@@ -1,17 +1,17 @@
 import React,{useContext} from 'react'
-import { Do_itContext } from '../context/Do_itContext'
-import Do_itDetails from './Do_itDetails'
+import { DoitContext } from '../context/DoitContext'
+import DoitDetails from './DoitDetails'
 
 
 
 const Todlist = () => {
-    const {todos} = useContext(Do_itContext)
+    const {todos} = useContext(DoitContext)
     return  todos.length ? (
         <div>
             <ul>
                 {todos.map(todo =>{
                     return(
-                        <Do_itDetails  todo = {todo} key={todo.id}/>
+                        <DoitDetails  todo = {todo} key={todo.id}/>
                     )
                 })}
             </ul>
