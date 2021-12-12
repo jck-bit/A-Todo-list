@@ -1,9 +1,9 @@
 import React,{useContext} from "react";
-import { Do_itContext } from "../context/Do_itContext";
+import { DoitContext } from "../context/DoitContext";
 
 
-const Do_itDetails = ({todo}) => {
-    const { removeTask } = useContext(Do_itContext)
+const DoitDetails = ({todo}) => {
+    const { removeTask } = useContext(DoitContext)
     return (
         <div>
             <li>
@@ -18,4 +18,4 @@ const Do_itDetails = ({todo}) => {
     )
 }
 
-export default Do_itDetails
+export default DoitDetails

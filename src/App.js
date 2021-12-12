@@ -1,16 +1,18 @@
-import Do_itContextProvider from "./context/Do_itContext";
+import DoitContextProvider from "./context/DoitContext";
 import Navbar from './components/Navbar'
 import Todlist from "./components/Todlist";
+import DoitForm from "./components/DoitForm";
 
 
 function App() {
   return (
 
     <div className="App">
-      <Do_itContextProvider>
+      <DoitContextProvider>
         <Navbar/>
         <Todlist/>
-      </Do_itContextProvider>
+        <DoitForm/>
+      </DoitContextProvider>
     </div>
   );
 }
