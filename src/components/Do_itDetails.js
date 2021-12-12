@@ -4,9 +4,9 @@ import React from "react";
 
 const  Do_itDetail = ({todo}) => {
     return ( 
-        <div>
-            <li>{todo.today}</li>
-            <li>{todo.Task}</li>
+        <div className="navbar">
+            <li className="hello">{todo.today}</li>
+            <li className="hello">{todo.Task}</li>
         </div>
      );
 }
