@@ -1,14 +1,17 @@
-import React from "react";
+import React,{useContext} from "react";
+import { Do_itContext } from "../context/Do_itContext";
 
 
-
-const  Do_itDetail = ({todo}) => {
-    return ( 
-        <div className="navbar">
-            <li className="hello">{todo.today}</li>
-            <li className="hello">{todo.Task}</li>
+const Do_itDetails = ({todo}) => {
+    const { removeBook } = useContext(Do_itContext)
+    return (
+        <div>
+            <li>
+                <div className="today">{todo.oday}</div>
+                <div className="Task">{todo.Task}</div>
+            </li>
         </div>
-     );
+    )
 }
- 
-export default Do_itDetail;
+
+export default Do_itDetails
