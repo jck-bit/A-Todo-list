@@ -7,7 +7,7 @@ import DoitDetails from './DoitDetails'
 const Todlist = () => {
     const {todos} = useContext(DoitContext)
     return  todos.length ? (
-        <div>
+        <div className="style">
             <ul>
                 {todos.map(todo =>{
                     return(
@@ -18,7 +18,7 @@ const Todlist = () => {
             
         </div>
       ) : (
-         <div classname="empty"></div>
+         <div classname="empty">Wooho....No Tasks</div>
     )
 }
 
